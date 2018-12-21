@@ -236,7 +236,9 @@ class New_material(Life_science) :
             # 9, 10, 11, 12월 달별로 계산할 리스트 생성
             month = [[] for row in range(4)]
             i = 0
-
+            
+            # 신소재 하루에 3가지의 메뉴가 나온다. (메뉴수 * 요일수 * 주)
+	        # 9월 4주 (3*5*4) /10월 5주 (3*5*5) / 11월 4주 (3*5*4), 12월 3주 (3*5*3) 계산
             for line in food_main:
                 if i < 60:
                     month[0].append(line)
